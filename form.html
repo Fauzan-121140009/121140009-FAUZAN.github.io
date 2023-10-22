@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Halaman Formulir</title>
+</head>
+<body>
+    <div class="cv" border="1">
+        <header>
+            <h2>Pendaftaran Anggota IKM-ITERA</h2>
+            <img src="Ikmlogo.png" alt="Logo Website">
+        </header>
+
+    <nav class="navigasi">
+        <ul>
+            <li><a href="index.html">Halaman Utama</a></li>
+            <li><a href="form.html">Halaman Formulir</a></li>
+            <li><a href="tabel.html">Halaman Tabel</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+            <div class="title">Formulir Pendaftaran</div>
+            <div class="content">
+                <form action="tabel.html" method="GET">
+                    <div class="user-details">
+                        <div class="input-inbox">
+                            <span class="details">Nama</span>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        <div class="input-inbox">
+                            <span class="details">NIM</span>
+                            <input type="text" id="nim" name="nim" required>
+                        </div>
+                        <div class="input-inbox">
+                            <span class="details">Program Studi</span>
+                            <input type="text" id="prodi" name="prodi" required>
+                        </div>
+                        <div class="input-inbox">
+                            <span class="details">Email</span>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-inbox">
+                            <span class="details">Password</span>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="input-inbox">
+                            <span class="details">Tanggal Lahir</span>
+                            <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+                        </div>
+                        <div class="input-inbox">
+                            <span class="details">Alamat</span>
+                            <textarea id="alamat" name="alamat" required></textarea>
+                        </div>
+                    </div>
+                    <form action="tabel.html" method="GET"> 
+                    <div class="gender-details"></div>
+                        <div class="gender-input">
+                            <span class="gender-title">Jenis Kelamin</span>
+                            <input type="radio" name="gender" value="1" required>Pria</input>
+                            <input type="radio" name="gender" value="2"  required>Wanita</input>
+                        </div>
+                        
+                        <button type="submit">Daftar</button>
+                    </form>
+                </form>
+            </div>
+    </div>
+
+
+    <footer>
+        <p> Copyright &copy;2023; Designed by Fauzan</p>
+    </footer>
+
+    
+    </div>
+</body>
+</html>

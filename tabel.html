@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Halaman Tabel</title>
+</head>
+<body>
+    <div class="cv-tabel" border="1">
+        <header class="head-tbl">
+            <h2>Pendaftaran Anggota IKM-ITERA</h2>
+            <img src="Ikmlogo.png" alt="Logo Website">
+        </header>
+
+    <nav class="navigasi">
+        <ul>
+            <li><a href="index.html">Halaman Utama</a></li>
+            <li><a href="form.html">Halaman Formulir</a></li>
+            <li><a href="tabel.html">Halaman Tabel</a></li>
+        </ul>
+    </nav>
+    <div class="data">
+        <h2>Data Pendaftar</h2>
+        <table border="1">
+                <tr>
+                    <th>Nama</th>
+                    <th>NIM</th>
+                    <th>Program Studi</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Alamat</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>12345678</td>
+                    <td>Informatika</td>
+                    <td>joe@example.com</td>
+                    <td>********</td>
+                    <td>Laki-laki</td>
+                    <td>2000-01-01</td>
+                    <td>Jl. Contoh No. 123</td>
+                </tr>
+                <tr>
+                    <td>FAUZAN</td>
+                    <td>121140009</td>
+                    <td>Informatika</td>
+                    <td>fzn@gmail.com</td>
+                    <td>********</td>
+                    <td>Laki-laki</td>
+                    <td>2002-01-23</td>
+                    <td>Jl. Sukarame</td>
+                </tr>
+                <tr>
+                    <td>Tama</td>
+                    <td>123425177</td>
+                    <td>Informatika</td>
+                    <td>tama@example.com</td>
+                    <td>********</td>
+                    <td>Laki-laki</td>
+                    <td>2001-01-01</td>
+                    <td>Jl. kotabaru No. 123</td>
+                </tr>
+                <tr>
+                    <td>Sumanto</td>
+                    <td>123738191</td>
+                    <td>Informatika</td>
+                    <td>smt@example.com</td>
+                    <td>********</td>
+                    <td>Laki-laki</td>
+                    <td>2001-03-02</td>
+                    <td>Jl. Duria Runtuh No. 33</td>
+                </tr>
+                <tr>
+                    <td>Mia</td>
+                    <td>12345645</td>
+                    <td>Informatika</td>
+                    <td>mia@example.com</td>
+                    <td>********</td>
+                    <td>/td>Perempuan</td>
+                    <td>2001-02-06</td>
+                    <td>Jl. gwencana</td>
+                </tr>
+                <tr>
+                    <td>Hansen</td>
+                    <td>12345876</td>
+                    <td>Informatika</td>
+                    <td>hn21@example.com</td>
+                    <td>********</td>
+                    <td>Laki-laki</td>
+                    <td>2000-05-06</td>
+                    <td>Jl. Conto</td>
+                </tr>
+                <tr>
+                    <td>jordi</td>
+                    <td>123456987</td>
+                    <td>Informatika</td>
+                    <td>jord2@example.com</td>
+                    <td>********</td>
+                    <td>Laki-laki</td>
+                    <td>2001-01-01</td>
+                    <td>Jl.harapan jaya</td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p> Copyright &copy;2023; Designed by Fauzan</p>
+    </footer>
+
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const nama = urlParams.get('nama');
+        const nim = urlParams.get('nim');
+        const prodi = urlParams.get('prodi');
+        const email = urlParams.get('email');
+        const password = urlParams.get('password');
+        const jenisKelamin = urlParams.get('jenis-kelamin');
+        const tanggalLahir = urlParams.get('tanggal-lahir');
+        const alamat = urlParams.get('alamat');
+        
+        if (nama) {
+            const tableBody = document.getElementById('mahasiswaTableBody');
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `<td>${nama}</td><td>${nim}</td><td>${prodi}</td><td>${email}</td><td>${password}</td><td>${jenisKelamin}</td><td>${tanggalLahir}</td><td>${alamat}</td>`;
+            
+            tableBody.appendChild(newRow);
+        }
+    </script>
+
+</body>
+</html>
+
+            
